@@ -1,0 +1,20 @@
+https://youtu.be/vpk_1gldOAE
+
+ssh-keygen -t rsa -b 4096
+
+cd ~/.ssh
+
+ls -lah
+
+id_rsa   is  private key
+ 
+id_rsa.pub   is  public key
+
+manually copy
+
+scp ~/.ssh/id_rsa.pub <host-name>@<host-ip>:The-path-where
+                      coryms@192.168.56.100:/home/coryms/.ssh/uploaded_key.pub
+
+cat ~/.ssh/uploaded_key.pub >> ~/.ssh/authorized_keys 
+
+cat ~/.ssh/authorized_keys 

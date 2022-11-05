@@ -1,0 +1,20 @@
+https://www.linuxtechi.com/static-ip-address-on-ubuntu-server/
+
+cd /etc/netplan/
+
+cat 00-installer-config.yaml
+
+$ sudo vi 00-installer-config.yaml
+# This is the network config written by 'subiquity'
+network:
+  renderer: networkd
+  ethernets:
+    ens33:
+      addresses:
+        - 192.168.1.147/24
+      nameservers:
+        addresses: [4.2.2.2, 8.8.8.8]
+      routes:
+        - to: default
+          via: 192.168.1.1
+  version: 2
