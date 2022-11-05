@@ -18,3 +18,22 @@ scp ~/.ssh/id_rsa.pub <host-name>@<host-ip>:The-path-where
 cat ~/.ssh/uploaded_key.pub >> ~/.ssh/authorized_keys 
 
 cat ~/.ssh/authorized_keys 
+
+chmod 700 ~/.shh/
+
+chmod 600 ~/.shh/*
+
+sudo cp /etc/ssh/sshd_config  /etc/ssh/sshd_config.bak
+
+sudo nano /etc/ssh/sshd_config 
+
+change
+
+PasswordAuthentication no
+
+save file
+
+sudo service ssh restart
+
+auto 
+ssh-copy-id coreyms@192.168.56.101
