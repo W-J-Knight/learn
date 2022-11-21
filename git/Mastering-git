@@ -1,0 +1,15 @@
+#removing_file statage area 
+    git rm --cached *****
+
+#rename a file 
+  mv oldname newname
+  #first add the new file
+  git add  newname
+  #second add the old file
+  git and oldname
+  #third commit the changes
+  git commit -m "change oldname to newname"
+  #with the git command
+  git mv oldname newname
+  #then a commit
+  git commit -m "done with git"
