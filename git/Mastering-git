@@ -32,3 +32,9 @@ git stash list # all the stash like a clipboard
 git stash apply nametheStash # while readd the files
 git stash apply # defualt to the latest stash
 git stash clear # clear all the stash
+--------------------------------------------
+unstage a file
+git reset HEAD filename.txt # unstage one file work area unchange
+git reset --hard HEAD filename.txt # won't work
+git checkout filename.txt # change working area and staging area
+--------------------------
