@@ -24,3 +24,11 @@ git reset --hard oldcommit-hash #where to start over with clean work area
 
 git reset HEAD # use defualt mixed  will unstage the statage area just like git mv oldname newname git commit -m "done with git"
 git reset --hard HEAD # reset working area and statage area like nothing happen be for the last commit
+
+----------------------------------------
+Stashing DATA
+git stash --include-untracked # put all other area in the stash to you can go to a different branch and where you can come back to finish later
+git stash list # all the stash like a clipboard
+git stash apply nametheStash # while readd the files
+git stash apply # defualt to the latest stash
+git stash clear # clear all the stash
