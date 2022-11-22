@@ -65,3 +65,8 @@ git show HEAD^^ # show back two commits from the current head one carrot from on
 git show HEAD~3 # ~ then a number for how many commits
 git show HEAD@{"1 week ago"}#
 ---------------------------------------------------------
+git blame filename.txt # tell what line was by who
+git diff HEAD HEAD^^ # different in commits
+git diff branch1..branch2 # different in branches
+git log firtbranch..seconndbranch  --oneline # tell you what branch are in second that not in the first
+---------------------------------------------
