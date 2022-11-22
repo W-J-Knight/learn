@@ -111,3 +111,5 @@ git rebase -i 85f6303# interactive rebase
 git reflog HEAD # relog will help reach unreach commit before they are garbage collected
 git reflog refs/heads/main
 -----------------------------------------------
+git filter-repo --path namefile.txt --invert-paths # delete this file trough ou t git history
+-----------------------------------------------------------------------
