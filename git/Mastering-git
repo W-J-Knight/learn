@@ -70,3 +70,5 @@ git diff HEAD HEAD^^ # different in commits
 git diff branch1..branch2 # different in branches
 git log firtbranch..seconndbranch  --oneline # tell you what branch are in second that not in the first
 ---------------------------------------------
+###never change shared history######
+-------------------------------------
