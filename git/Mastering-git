@@ -56,3 +56,12 @@ git switch [<options>] --orphan <new-branch>
 -------------restore-------------------------
 git restore --staged filename.txt # unstage a file the stage area
 git restore filename.txt # unstage a file the working area
+------------------------LOG------------------------------------
+git log --graph --decorate --oneline
+git show 48039d4
+git show HEAD # show current head
+git show HEAD^ # show back one commit from the current head
+git show HEAD^^ # show back two commits from the current head one carrot from one commit back
+git show HEAD~3 # ~ then a number for how many commits
+git show HEAD@{"1 week ago"}#
+---------------------------------------------------------
