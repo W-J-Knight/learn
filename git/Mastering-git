@@ -38,3 +38,21 @@ git reset HEAD filename.txt # unstage one file work area unchange
 git reset --hard HEAD filename.txt # won't work
 git checkout filename.txt # change working area and staging area
 --------------------------
+# git operate on things smaller than  a file
+git add -p filename.txt # divid the file in hunks
+#  press to understand options
+# y - stage this hunk
+# n - do not stage this hunk
+# q - quit; do not stage this hunk or any of the remaining ones
+# a - stage this hunk and all later hunks in the file
+# d - do not stage this hunk or any of the later hunks in the file
+# e - manually edit the current hunk
+# ? - print help
+--------------switch-------------------------------
+git switch [<options>] [--no-guess] <branch>
+git switch [<options>] --detach [<start-point>]
+git switch [<options>] (-c|-C) <new-branch> [<start-point>]
+git switch [<options>] --orphan <new-branch>
+-------------restore-------------------------
+git restore --staged filename.txt # unstage a file the stage area
+git restore filename.txt # unstage a file the working area
