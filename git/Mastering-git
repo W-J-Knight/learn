@@ -113,3 +113,5 @@ git reflog refs/heads/main
 -----------------------------------------------
 git filter-repo --path namefile.txt --invert-paths # delete this file trough ou t git history
 -----------------------------------------------------------------------
+
+git revert commit_hash # create a new commit opposite of that commit
