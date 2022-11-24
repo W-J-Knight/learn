@@ -115,3 +115,13 @@ git filter-repo --path namefile.txt --invert-paths # delete this file trough ou 
 -----------------------------------------------------------------------
 
 git revert commit_hash # create a new commit opposite of that commit
+
+-----------------------------------------
+type of branches 
+INTERATION BRANCHES where you bring multiple features together for testing, before the final push onto master
+
+RELEASE BRANCHES  helps isolate the development of an upcoming version and the current release.elease branch is done it is merged into develop and main
+
+FEATURE BRANCHESbranching model focused, meaning that it is a guiding framework for managing and creating branches. a copy of the main codebase where an individual or team of software developers can work on a new feature until it is complete
+
+HOTFIX BRANCHES
